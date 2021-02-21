@@ -11,8 +11,9 @@ const options = {
 }
 
 const connection = mysql.createPool(options)
+console.log(options)
 connection.getConnection((err, connection) => {
-    // if (err) console.log(err.message,`host:${env.DB_HOST} ,database:${env.DB_DATABASE} ,user:${env.DB_USERNAME},password:${env.DB_PASSWORD}`)
+    if (err) console.log(err.message,`host:${env.DB_HOST} ,database:${env.DB_DATABASE} ,user:${env.DB_USERNAME},password:${env.DB_PASSWORD}`)
     if (connection) connection.release()
     return
 })
