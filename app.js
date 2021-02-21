@@ -33,7 +33,8 @@ app.use((req, res, next) => {
 const port = env.PORT || '3000'
 app.set('port', port)
 
-const server = env.NODE_ENV === 'development' ? 
-            http.createServer(app) : https.createServer(app)
+// const server = env.NODE_ENV === 'development' ? 
+//             http.createServer(app) : https.createServer(app)
+const server = http.createServer(app)
 server.listen(port)
 
