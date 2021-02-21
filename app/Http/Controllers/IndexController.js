@@ -16,6 +16,7 @@ export default {
             })
         }
     },
+
     store : async (req , res) => {
         try {
             const data = await DB.table('users').create({
