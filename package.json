@@ -1,0 +1,35 @@
+{
+  "name": "onebinar",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon ./app.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "~1.4.4",
+    "cookieparser": "^0.1.0",
+    "csurf": "^1.11.0",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "express-pdf": "^1.2.2",
+    "html-pdf": "^2.2.0",
+    "http-errors": "~1.6.3",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.4.17",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
