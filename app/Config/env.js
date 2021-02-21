@@ -24,5 +24,4 @@ export default {
     MAIL_PASSWORD : env.MAIL_PASSWORD,
     JWT_SECRET : env.JWT_SECRET,
     JWT_EXPIRE_HOUR :env.JWT_EXPIRE_HOUR,
-
 }
