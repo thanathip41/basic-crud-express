@@ -12,7 +12,7 @@ const options = {
 
 const connection = mysql.createPool(options)
 connection.getConnection((err, connection) => {
-    if (err) console.error(err.message || 'connection lost !')
+    if (err) console.error(err.message,`${env.DB_HOST} host`)
     if (connection) connection.release()
     return
 })
