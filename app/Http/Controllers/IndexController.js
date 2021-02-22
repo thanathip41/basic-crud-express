@@ -62,7 +62,7 @@ export default {
                     email : req.body.email
                 })
                 .where('id',id).save()
-                console.log(user)
+            
          return res.json({
                  result : 'Success',
                  data : user[0]
